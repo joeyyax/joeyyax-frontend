@@ -7,9 +7,26 @@ let breakpoints = Object.assign({}, defaultTheme.screens)
 delete breakpoints["2xl"] // delete the 2xl breakpoint
 
 module.exports = {
-  content: ["./{components,pages,app,styles}/**/*.{js,jsx,ts,tsx}"],
+  content: ["./{components,app,styles}/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        sans: [
+          "var(--font-inter)",
+          "system-ui",
+          "-apple-system",
+          "BlinkMacSystemFont",
+          "Segoe UI",
+          "Roboto",
+          "Oxygen",
+          "Ubuntu",
+          "Cantarell",
+          "Fira Sans",
+          "Droid Sans",
+          "Helvetica Neue",
+          "sans-serif",
+        ],
+      },
       container: {
         screens: breakpoints,
         center: true,

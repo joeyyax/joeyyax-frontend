@@ -10,4 +10,8 @@ module.exports = {
   arrowParens: "always",
   bracketSpacing: true,
   bracketSameLine: false,
+  // disabled import order plugin because its conflicting with new script directives like "use client"
+  // importOrder: ["^components/(.*)$", "^[./]"],
+  // importOrderSeparation: true,
+  // importOrderSortSpecifiers: true,
 }

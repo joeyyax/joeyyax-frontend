@@ -2,29 +2,121 @@
 @tailwind components;
 @tailwind utilities;
 
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
 * {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+[data-nextjs-scroll-focus-boundary] {
+  display: contents;
+}
+
+html,
+body {
+  @apply m-0 p-0;
+  @apply font-sans;
+}
+
+body {
+  @apply flex flex-col justify-start;
+  @apply m-0 h-full min-h-screen w-full p-0;
+  @apply bg-white text-slate-600;
+  @apply overflow-x-hidden;
+}
+
+main {
+  @apply flex w-full flex-col justify-start;
+
+  section:first-child {
+    .container {
+      @apply pt-24 md:pt-32;
+    }
   }
-  body {
-    color: white;
-    background: black;
+}
+
+@layer base {
+  img {
+    max-width: 100%;
   }
+
+  p,
+  ol,
+  ul,
+  blocktext {
+    @apply mb-4;
+
+    &:last-child {
+      @apply mb-0;
+    }
+  }
+
+  ul:not(.list-lined) {
+    @apply pl-3;
+    li {
+      /* @apply py-2; */
+      /* &:last-child {
+      @apply pb-0;
+    } */
+    }
+  }
+
+  ul.list-lined {
+    @apply w-full;
+    li {
+      @apply py-2;
+      @apply border-b border-dotted border-slate-300;
+
+      &:last-child {
+        @apply border-none;
+      }
+    }
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  form {
+    @apply flex w-full flex-col items-start gap-4;
+  }
+
+  .prose {
+    @apply w-full gap-4;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      @apply mb-6;
+    }
+
+    h1 {
+      @apply text-6xl;
+    }
+
+    h2 {
+      @apply text-5xl;
+    }
+
+    h3 {
+      @apply text-3xl;
+    }
+
+    h4 {
+      @apply text-2xl;
+    }
+
+    h5 {
+      @apply text-xl;
+    }
+
+    h6 {
+      @apply text-lg;
+    }
+  }
+}
+
+@layer utilities {
 }
