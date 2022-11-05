@@ -17,10 +17,13 @@
     "e2e.headless": "start-server-and-test dev http://localhost:3000 cypress.headless"
   },
   "dependencies": {
+    "@portabletext/react": "^2.0.0",
+    "@sanity/client": "^3.4.1",
     "@types/node": "18.11.9",
     "@types/react": "18.0.25",
     "@types/react-dom": "18.0.8",
     "eslint-config-next": "13.0.2",
+    "groq": "^2.33.2",
     "next": "13.0.2",
     "next-sitemap": "^3.1.30",
     "react": "18.2.0",
