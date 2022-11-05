@@ -7,7 +7,7 @@ let breakpoints = Object.assign({}, defaultTheme.screens)
 delete breakpoints["2xl"] // delete the 2xl breakpoint
 
 module.exports = {
-  content: ["./{components,pages,styles}/**/*.{js,jsx,ts,tsx}"],
+  content: ["./{components,pages,app,styles}/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
       container: {
