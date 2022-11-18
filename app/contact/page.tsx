@@ -26,7 +26,7 @@ const Page = async () => {
       <Section
         className="relative h-full"
         container={{
-          className: "grid grid-cols-1 md:grid-cols-2 h-full items-stretch",
+          className: "grid grid-cols-1 md:grid-cols-2",
         }}
       >
         <Section.Body cols className="gap-8 pr-4 md:pr-8">
@@ -36,25 +36,24 @@ const Page = async () => {
           </Section.Header>
           <ContactForm />
         </Section.Body>
-        <div>
-          <Overflow
-            direction="left"
-            className="bg-gradient-to-tr from-slate-900 to-cyan-900 text-white text-opacity-75 mix-blend-luminosity"
-          >
-            <Overflow.Container className="flex flex-col justify-center gap-8 py-8 pl-4 md:py-12 md:pl-8">
-              <div className="flex flex-col gap-4">
-                <h3 className="text-xl font-bold">Contact Information</h3>
-                {/* @ts-expect-error Server Component */}
-                <ContactInformation />
-              </div>
-              <div className="flex flex-col gap-4">
-                <h3 className="text-xl font-bold">Find me on socials too</h3>
-                {/* @ts-expect-error Server Component */}
-                <Socials as="list" />
-              </div>
-            </Overflow.Container>
-          </Overflow>
-        </div>
+
+        <Overflow
+          direction="left"
+          className="bg-gradient-to-tr from-slate-900 to-cyan-900 text-white text-opacity-75 mix-blend-luminosity"
+        >
+          <Overflow.Container className="flex flex-col justify-center gap-8 py-8 pl-4 md:py-12 md:pl-8">
+            <div className="flex flex-col gap-4">
+              <h3 className="text-xl font-bold">Contact Information</h3>
+              {/* @ts-expect-error Server Component */}
+              <ContactInformation />
+            </div>
+            <div className="flex flex-col gap-4">
+              <h3 className="text-xl font-bold">Find me on socials too</h3>
+              {/* @ts-expect-error Server Component */}
+              <Socials as="list" />
+            </div>
+          </Overflow.Container>
+        </Overflow>
       </Section>
     </>
   )

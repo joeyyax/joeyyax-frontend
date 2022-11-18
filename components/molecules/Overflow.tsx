@@ -22,7 +22,7 @@ const Overflow = ({ className, children, ...props }: OverflowProps) => {
   return (
     <div
       className={classNames(
-        "overflow flex h-full self-stretch overflow-hidden md:w-[100vw]",
+        "overflow flex self-stretch overflow-hidden md:w-[100vw]",
         "rounded-xl md:rounded-l-xl",
         className
       )}

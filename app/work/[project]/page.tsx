@@ -133,7 +133,7 @@ const Project = async ({ params: { project } }: any) => {
 
       {/* intro */}
       <Section className="relative py-0">
-        <div className="grid h-full w-full grid-cols-1 items-stretch gap-8 py-0 md:grid-cols-12 md:py-0 lg:py-0">
+        <div className="grid w-full grid-cols-1 gap-8 py-0 md:grid-cols-12 md:py-0 lg:py-0">
           <div className="md:col-span-7">
             <div className="prose">
               <Text value={data.intro} />
