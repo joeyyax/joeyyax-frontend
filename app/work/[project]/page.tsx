@@ -140,7 +140,12 @@ const Project = async ({ params: { project } }: any) => {
             </div>
             {data.url && (
               <p>
-                <Button href={data.url} className="mt-4" theme="primary">
+                <Button
+                  href={data.url}
+                  target="_blank"
+                  className="mt-4"
+                  theme="primary"
+                >
                   Visit Website
                 </Button>
               </p>
