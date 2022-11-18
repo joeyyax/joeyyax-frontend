@@ -24,7 +24,7 @@ const Page = async () => {
     <>
       <Head title="Contact" />
       <Section
-        className="relative h-full"
+        className="relative h-full overflow-x-hidden"
         container={{
           className: "grid grid-cols-1 md:grid-cols-2",
         }}
