@@ -3,7 +3,7 @@ import { memo } from "react"
 export type Props = {
   htmlFor: string
   children: any
-}
+} & React.LabelHTMLAttributes<HTMLLabelElement>
 
 const FormLabel = ({ htmlFor, children }: Props) => {
   return (

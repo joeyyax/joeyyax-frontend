@@ -3,7 +3,7 @@ import { memo } from "react"
 export type Props = {
   register: any
   [key: string]: any
-}
+} & React.TextareaHTMLAttributes<HTMLTextAreaElement>
 
 const FormInput = ({ register, ...props }: Props) => {
   return (

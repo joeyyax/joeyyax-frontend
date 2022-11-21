@@ -6,7 +6,7 @@ export type Props = {
   placeholder?: string
   register: any
   [key: string]: any
-}
+} & React.InputHTMLAttributes<HTMLInputElement>
 
 const FormInput = ({ name, type, placeholder, register, ...props }: Props) => {
   return (

@@ -12,7 +12,7 @@ export type FormProps = {
   success?: boolean
   error?: boolean
   children: React.ReactNode
-}
+} & React.FormHTMLAttributes<HTMLFormElement>
 
 const Form = ({ children, success, error, ...props }: FormProps) => {
   if (success) {
