@@ -92,6 +92,7 @@ const Button = ({
         className={classes}
         onClick={handleClick}
         aria-disabled={disabled}
+        href={href}
         {...props}
       >
         {icon && icon.position == "left" && <LinkIcon {...icon} />}

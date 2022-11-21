@@ -45,29 +45,28 @@ const NavItem = (
   }
 
   return (
-    <Link href={href} passHref legacyBehavior>
-      <a
-        className={merge(
-          "nav-item relative z-10 inline-flex h-full transform font-medium transition-all",
-          "items-center p-4 md:py-0 md:px-5",
-          "rounded-lg text-slate-700 text-opacity-70",
-          (isCurrentPage || isAncestor) && "text-opacity-100",
-          "hover:text-opacity-100 ",
-          "active:translate-y-[1px] active:text-opacity-100",
-          className
-        )}
-        aria-label={`Go to ${children} page`}
-      >
-        <span className="relative z-10">{children}</span>
-        {(isCurrentPage || isAncestor) && (
-          <motion.div
-            className="active-nav-item-indicator absolute inset-0 -z-10 rounded-lg bg-black/5"
-            initial={{ opacity: 0, scale: 0 }}
-            animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0, scale: 0 }}
-          />
-        )}
-      </a>
+    <Link
+      href={href}
+      className={merge(
+        "nav-item relative z-10 inline-flex h-full transform font-medium transition-all",
+        "items-center p-4 md:py-0 md:px-5",
+        "rounded-lg text-slate-700 text-opacity-70",
+        (isCurrentPage || isAncestor) && "text-opacity-100",
+        "hover:text-opacity-100 ",
+        "active:translate-y-[1px] active:text-opacity-100",
+        className
+      )}
+      aria-label={`Go to ${children} page`}
+    >
+      <span className="relative z-10">{children}</span>
+      {(isCurrentPage || isAncestor) && (
+        <motion.div
+          className="active-nav-item-indicator absolute inset-0 -z-10 rounded-lg bg-black/5"
+          initial={{ opacity: 0, scale: 0 }}
+          animate={{ opacity: 1, scale: 1 }}
+          exit={{ opacity: 0, scale: 0 }}
+        />
+      )}
     </Link>
   )
 }

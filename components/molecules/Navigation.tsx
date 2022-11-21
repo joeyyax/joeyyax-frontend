@@ -45,7 +45,7 @@ const Navigation = () => {
           Contact
         </NavItem>
       </nav>
-      <span
+      <button
         className="inline-flex cursor-pointer text-3xl md:hidden"
         data-collapse-toggle="navbar-primary"
         aria-controls="navbar-primary"
@@ -53,7 +53,7 @@ const Navigation = () => {
         onClick={handleMobileNavToggle}
       >
         <MobileNavIcon />
-      </span>
+      </button>
     </>
   )
 }

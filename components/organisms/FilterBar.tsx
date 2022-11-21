@@ -40,7 +40,7 @@ const FilterBar = ({
             if (count <= minItems) return null
 
             return (
-              <span
+              <button
                 className={classNames(
                   "cursor-pointer",
                   thisSlug === activeFilter ? "underline" : ""
@@ -52,7 +52,7 @@ const FilterBar = ({
                 {useAbbreviatedTitles && abbreviatedTitle
                   ? abbreviatedTitle
                   : title}
-              </span>
+              </button>
             )
           }
         )}

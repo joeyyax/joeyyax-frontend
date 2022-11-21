@@ -1,16 +1,11 @@
 module.exports = {
-  plugins: [
-    "@typescript-eslint",
-    "unused-imports",
-    "tailwindcss",
-    // "jsx-a11y",
-  ],
+  plugins: ["@typescript-eslint", "unused-imports", "tailwindcss", "jsx-a11y"],
   extends: [
     "plugin:@typescript-eslint/recommended",
     "next/core-web-vitals",
     "plugin:tailwindcss/recommended",
     "prettier",
-    // "plugin:jsx-a11y/recommended",
+    "plugin:jsx-a11y/recommended",
   ],
   parser: "@typescript-eslint/parser",
   rules: {

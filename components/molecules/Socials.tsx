@@ -80,18 +80,18 @@ const Socials = async ({ as = "icons", className }: Props) => {
         const Icon = iconMap[network]
 
         return (
-          <Link href={url} passHref key={network} legacyBehavior>
-            <a
-              className={classNames(
-                "social hover:text-slate-500",
-                `social--${network}`,
-                `umami--click--social-${network}`
-              )}
-              title={`Follow ${username} on ${title}`}
-              target="_blank"
-            >
-              <Icon />
-            </a>
+          <Link
+            href={url}
+            key={network}
+            className={classNames(
+              "social hover:text-slate-500",
+              `social--${network}`,
+              `umami--click--social-${network}`
+            )}
+            title={`Follow ${username} on ${title}`}
+            target="_blank"
+          >
+            <Icon />
           </Link>
         )
       })}
