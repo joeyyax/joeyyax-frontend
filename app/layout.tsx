@@ -20,6 +20,14 @@ export default function Layout({ children }: Props) {
   return (
     <html lang="en" className={inter.variable}>
       <Head />
+      {process.env.NODE_ENV === "production" && (
+        <script
+          async
+          defer
+          data-website-id={process.env.NEXT_PUBLIC_UMAMI_ID}
+          src={process.env.NEXT_PUBLIC_UMAMI_URL}
+        />
+      )}
       <body>
         <Navbar />
         <main>{children}</main>
