@@ -1,7 +1,6 @@
-import Link from "next/link"
-
 import LinkIcon from "components/atoms/LinkIcon"
 import { LinkIconProps } from "components/molecules/Link"
+import Link from "next/link"
 
 export type Props = {
   href?: string | null | undefined

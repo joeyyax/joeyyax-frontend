@@ -1,8 +1,7 @@
-import { Text, client, groq } from "lib/sanity"
-
 import Head from "components/molecules/Head"
 import Hero from "components/organisms/Hero"
 import Projects from "components/organisms/Projects"
+import { Text, client, groq } from "lib/sanity"
 
 const getData = async () => {
   const data = client.fetch(groq`*[_id == 'work'][0]`).then((data) => {

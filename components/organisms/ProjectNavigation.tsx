@@ -1,10 +1,9 @@
+import LinkIcon from "components/atoms/LinkIcon"
+import Section from "components/atoms/Section"
 import { merge } from "lib/classNames"
 import { client, groq } from "lib/sanity"
 import Image from "next/image"
 import Link from "next/link"
-
-import LinkIcon from "components/atoms/LinkIcon"
-import Section from "components/atoms/Section"
 
 export type ProjectNavigationProps = {
   nextProject: any

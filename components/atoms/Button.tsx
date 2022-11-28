@@ -1,9 +1,8 @@
 "use client"
 
+import LinkIcon, { LinkIconProps } from "./LinkIcon"
 import { merge } from "lib/classNames"
 import Link from "next/link"
-
-import LinkIcon, { LinkIconProps } from "./LinkIcon"
 
 export type ButtonSizeType = "small" | "medium" | "large" | undefined
 export type ButtonThemeType =

@@ -1,11 +1,9 @@
 "use client"
 
+import ConditionalLink from "./ConditionalLink"
+import { LinkIconProps } from "components/molecules/Link"
 import { motion } from "framer-motion"
 import { merge } from "lib/classNames"
-
-import { LinkIconProps } from "components/molecules/Link"
-
-import ConditionalLink from "./ConditionalLink"
 
 export type PreTitleType = {
   className?: any

@@ -1,7 +1,6 @@
-import { merge } from "lib/classNames"
-
 import PreTitle from "./PreTitle"
 import Title from "./Title"
+import { merge } from "lib/classNames"
 
 interface Props {
   id?: string

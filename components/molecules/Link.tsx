@@ -1,6 +1,5 @@
-import { merge } from "lib/classNames"
-
 import LinkIcon from "components/atoms/LinkIcon"
+import { merge } from "lib/classNames"
 
 export type LinkIconProps = {
   icon?: any

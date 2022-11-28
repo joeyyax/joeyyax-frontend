@@ -1,7 +1,6 @@
+import ConditionalLink from "./ConditionalLink"
 import { merge } from "lib/classNames"
 import { Ref, forwardRef } from "react"
-
-import ConditionalLink from "./ConditionalLink"
 
 export type ContainerType = {
   className?: string

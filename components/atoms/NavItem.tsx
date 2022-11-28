@@ -1,12 +1,11 @@
 "use client"
 
+import Button, { ButtonThemeType } from "../../components/atoms/Button"
 import { motion } from "framer-motion"
 import { merge } from "lib/classNames"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { Ref, forwardRef } from "react"
-
-import Button, { ButtonThemeType } from "../../components/atoms/Button"
 
 export interface NavItemProps {
   href: string

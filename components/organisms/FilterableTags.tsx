@@ -1,14 +1,12 @@
 "use client"
 
-import { merge } from "lib/classNames"
-import { client, groq } from "lib/sanity"
-import { useEffect, useState } from "react"
-
-import { TagType } from "components/atoms/Tag"
-
 import Tags from "../../components/molecules/Tags"
 import Section from "../atoms/Section"
 import FilterBar from "./FilterBar"
+import { TagType } from "components/atoms/Tag"
+import { merge } from "lib/classNames"
+import { client, groq } from "lib/sanity"
+import { useEffect, useState } from "react"
 
 // !todo: update to new data fetching pattern
 

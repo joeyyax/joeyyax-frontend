@@ -1,12 +1,11 @@
-import { merge } from "lib/classNames"
-import { Fragment } from "react"
-
 import Body from "./Body"
 import Container, { ContainerType } from "./Container"
 import GutterText from "./GutterText"
 import Header from "./Header"
 import PreTitle from "./PreTitle"
 import Title from "./Title"
+import { merge } from "lib/classNames"
+import { Fragment } from "react"
 
 interface Props {
   id?: string

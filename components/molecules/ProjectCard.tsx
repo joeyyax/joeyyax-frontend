@@ -1,14 +1,13 @@
 "use client"
 
+import LinkIcon from "components/atoms/LinkIcon"
+import Title from "components/atoms/Title"
+import Tags, { TagsType } from "components/molecules/Tags"
 import { motion, useInView } from "framer-motion"
 import { classNames, merge } from "lib/classNames"
 import Image from "next/image"
 import Link from "next/link"
 import { useEffect, useRef, useState } from "react"
-
-import LinkIcon from "components/atoms/LinkIcon"
-import Title from "components/atoms/Title"
-import Tags, { TagsType } from "components/molecules/Tags"
 
 export type ProjectCardFormatType = "cols" | "rows"
 export type ProjectCardSizeType = "medium" | "large"
