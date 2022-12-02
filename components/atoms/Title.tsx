@@ -1,9 +1,8 @@
 "use client"
 
+import ConditionalLink from "./ConditionalLink"
 import { motion } from "framer-motion"
 import { merge } from "lib/classNames"
-
-import ConditionalLink from "./ConditionalLink"
 
 export type TitleSizeType = "h1" | "h2" | "h3" | "h4" | "h5" | "h6"
 

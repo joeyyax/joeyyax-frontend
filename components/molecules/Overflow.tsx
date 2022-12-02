@@ -9,9 +9,8 @@
  *
  * @returns {React.ReactNode}
  */
-import { classNames } from "lib/classNames"
-
 import OverflowContainer from "./OverflowContainer"
+import { classNames } from "lib/classNames"
 
 export type OverflowProps = {
   className?: string

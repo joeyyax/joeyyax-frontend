@@ -5,11 +5,12 @@ describe("About Page", () => {
     cy.visit("/about")
   })
 
-  it("Has link to resume", () => {
-    cy.get("a").contains("Resume").should("be.visible")
-  })
-
-  it("Resume link works", () => {
-    cy.request(cy.get("a").contains("Resume")).its("status").should("eq", 200)
+  it("If exists, check if resume link is visible and works", () => {
+    cy.get("body").then(($body) => {
+      if ($body.find("a.download-resume").length > 0) {
+        cy.get("a.download-resume").should("be.visible")
+        cy.request(cy.get("a.download-resume")).its("status").should("eq", 200)
+      }
+    })
   })
 })

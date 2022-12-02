@@ -1,10 +1,9 @@
 "use client"
 
 import useWeb3Forms from "@web3forms/react"
+import Form from "components/molecules/Form"
 import { useState } from "react"
 import { useForm } from "react-hook-form"
-
-import Form from "components/molecules/Form"
 
 export default function Contact() {
   const {

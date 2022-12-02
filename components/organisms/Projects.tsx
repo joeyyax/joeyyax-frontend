@@ -1,13 +1,11 @@
-import { classNames } from "lib/classNames"
-import { client, groq } from "lib/sanity"
-
-import { GutterTextProps } from "components/atoms/GutterText"
-
 import ProjectCard, {
   ProjectCardFormatType,
   ProjectCardSizeType,
 } from "../../components/molecules/ProjectCard"
 import Section from "../atoms/Section"
+import { GutterTextProps } from "components/atoms/GutterText"
+import { classNames } from "lib/classNames"
+import { client, groq } from "lib/sanity"
 
 export type Props = {
   gutterText?: GutterTextProps

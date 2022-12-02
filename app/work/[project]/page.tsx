@@ -1,3 +1,9 @@
+import Alert from "components/atoms/Alert"
+import Button from "components/atoms/Button"
+import Section from "components/atoms/Section"
+import Overflow from "components/molecules/Overflow"
+import Hero from "components/organisms/Hero"
+import ProjectNavigation from "components/organisms/ProjectNavigation"
 import { classNames } from "lib/classNames"
 import { Text, client, groq } from "lib/sanity"
 import {
@@ -6,13 +12,6 @@ import {
   AiOutlineTeam as PartnerIcon,
 } from "react-icons/ai"
 import { BsPersonBadge as EmployeeIcon } from "react-icons/bs"
-
-import Alert from "components/atoms/Alert"
-import Button from "components/atoms/Button"
-import Section from "components/atoms/Section"
-import Overflow from "components/molecules/Overflow"
-import Hero from "components/organisms/Hero"
-import ProjectNavigation from "components/organisms/ProjectNavigation"
 
 // Generates `/work/{project}` and required for sitemap generation
 export async function generateStaticParams() {

@@ -1,8 +1,7 @@
-import { classNames, merge } from "lib/classNames"
-
 import Section from "components/atoms/Section"
 import Branding from "components/molecules/Branding"
 import Socials from "components/molecules/Socials"
+import { classNames, merge } from "lib/classNames"
 
 const Footer = () => {
   const currentYear = new Date().getFullYear()

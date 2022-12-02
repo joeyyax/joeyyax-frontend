@@ -1,8 +1,6 @@
-import { merge } from "lib/classNames"
-
-import Button from "components/atoms/Button"
-
 import Section from "../atoms/Section"
+import Button from "components/atoms/Button"
+import { merge } from "lib/classNames"
 
 export type CalloutProps = {
   className?: any

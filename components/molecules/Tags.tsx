@@ -1,9 +1,8 @@
 "use client"
 
+import Tag, { TagSizeType, TagThemeType, TagType } from "components/atoms/Tag"
 import { motion } from "framer-motion"
 import { merge } from "lib/classNames"
-
-import Tag, { TagSizeType, TagThemeType, TagType } from "components/atoms/Tag"
 
 export type TagsType = {
   data: TagType[]

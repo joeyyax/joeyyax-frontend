@@ -1,11 +1,10 @@
-import { motion } from "framer-motion"
-import { AiOutlineCheckCircle as CheckIcon } from "react-icons/ai"
-
 import FormInput from "components/atoms/FormInput"
 import FormSubmitButton from "components/atoms/FormSubmitButton"
 import FormTextArea from "components/atoms/FormTextArea"
 import Title from "components/atoms/Title"
 import FormControl from "components/molecules/FormControl"
+import { motion } from "framer-motion"
+import { AiOutlineCheckCircle as CheckIcon } from "react-icons/ai"
 
 export type FormProps = {
   onSubmit: (e: React.FormEvent<HTMLFormElement>) => void

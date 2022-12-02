@@ -7,16 +7,14 @@
  * - Scrolling up will gradually show navbar if hidden
  * - Hovering over a partially visible navbar will bring it fully into view
  **/
-
 import classNames from "classnames/dedupe"
-import { motion, useScroll, useTransform } from "framer-motion"
-import { usePathname } from "next/navigation"
-import { useEffect, useRef, useState } from "react"
-
 import Container from "components/atoms/Container"
 import NavItem from "components/atoms/NavItem"
 import Branding from "components/molecules/Branding"
 import Navigation from "components/molecules/Navigation"
+import { motion, useScroll, useTransform } from "framer-motion"
+import { usePathname } from "next/navigation"
+import { useEffect, useRef, useState } from "react"
 
 const MIN_SCROLL_START = 0
 const SCROLL_MULTIPLIER = 2

@@ -1,12 +1,11 @@
-import { Text, client, groq } from "lib/sanity"
-import Image from "next/image"
-import { AiOutlineFilePdf as PdfIcon } from "react-icons/ai"
-
 import Button from "components/atoms/Button"
 import Section from "components/atoms/Section"
 import Head from "components/molecules/Head"
 import Callout from "components/organisms/Callout"
 import FilterableTags from "components/organisms/FilterableTags"
+import { Text, client, groq } from "lib/sanity"
+import Image from "next/image"
+import { AiOutlineFilePdf as PdfIcon } from "react-icons/ai"
 
 const getData = async () => {
   const data = client
@@ -49,6 +48,7 @@ const Page = async () => {
                 {data.resume && (
                   <p className="pt-8">
                     <Button
+                      className="download-resume"
                       theme="primary"
                       href={data.resume}
                       icon={{

@@ -1,11 +1,8 @@
 /// <reference types="cypress" />
 
 describe("Work Page", () => {
-  beforeEach(() => {
-    cy.visit("/work")
-  })
-
   it("Projects appear", () => {
+    cy.visit("/work")
     cy.get(".projects").should("be.visible")
   })
 

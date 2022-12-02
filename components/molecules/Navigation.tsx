@@ -1,5 +1,6 @@
 "use client"
 
+import NavItem from "../atoms/NavItem"
 import classNames from "classnames"
 import { usePathname } from "next/navigation"
 import { useEffect, useState } from "react"
@@ -7,8 +8,6 @@ import {
   AiOutlineClose as CloseMenuIcon,
   AiOutlineMenu as MenuIcon,
 } from "react-icons/ai"
-
-import NavItem from "../atoms/NavItem"
 
 const Navigation = () => {
   const pathname = usePathname()

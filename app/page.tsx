@@ -1,9 +1,8 @@
-import { client, groq, toPlainText } from "lib/sanity"
-
 import Head from "components/molecules/Head"
 import Callout from "components/organisms/Callout"
 import Hero from "components/organisms/Hero"
 import Projects from "components/organisms/Projects"
+import { client, groq, toPlainText } from "lib/sanity"
 
 const getData = async () => {
   const data = client

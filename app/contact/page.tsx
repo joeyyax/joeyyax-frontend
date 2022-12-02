@@ -1,11 +1,10 @@
-import { Text, client, groq } from "lib/sanity"
-
 import Section from "components/atoms/Section"
 import ContactInformation from "components/molecules/ContactInformation"
 import Head from "components/molecules/Head"
 import Overflow from "components/molecules/Overflow"
 import Socials from "components/molecules/Socials"
 import ContactForm from "components/organisms/ContactForm"
+import { Text, client, groq } from "lib/sanity"
 
 const getData = async () => {
   const data = client

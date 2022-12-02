@@ -1,5 +1,3 @@
-import { merge } from "lib/classNames"
-
 import HeroBody, { HeroBodyType } from "components/atoms/HeroBody"
 import HeroMedia from "components/atoms/HeroMedia"
 import PreTitle, { PreTitleType } from "components/atoms/PreTitle"
@@ -7,6 +5,7 @@ import Section from "components/atoms/Section"
 import Title, { TitleType } from "components/atoms/Title"
 import HeroBackground from "components/molecules/HeroBackground"
 import Tags, { TagsType } from "components/molecules/Tags"
+import { merge } from "lib/classNames"
 
 export type HeroType = {
   theme?: "light" | "dark"

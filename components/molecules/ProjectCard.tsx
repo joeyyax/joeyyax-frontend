@@ -1,14 +1,13 @@
 "use client"
 
+import LinkIcon from "components/atoms/LinkIcon"
+import Title from "components/atoms/Title"
+import Tags, { TagsType } from "components/molecules/Tags"
 import { motion, useInView } from "framer-motion"
 import { classNames, merge } from "lib/classNames"
 import Image from "next/image"
 import Link from "next/link"
 import { useEffect, useRef, useState } from "react"
-
-import LinkIcon from "components/atoms/LinkIcon"
-import Title from "components/atoms/Title"
-import Tags, { TagsType } from "components/molecules/Tags"
 
 export type ProjectCardFormatType = "cols" | "rows"
 export type ProjectCardSizeType = "medium" | "large"
@@ -79,32 +78,32 @@ const ProjectCard = ({
   }
 
   return (
-    <motion.div
-      ref={ref}
-      className={merge(
-        "project-card group",
-        "relative flex flex-col bg-slate-800",
-        size == "medium" && "rounded-lg p-10 md:p-12",
-        size == "large" && "rounded-xl p-10 md:p-16",
-        !rounded && "rounded-none",
-        "overflow-hidden",
-        className
-      )}
-      title={title}
-      style={{
-        backgroundColor: color,
-      }}
-      initial={{ opacity: 0, y: animateDistance }}
-      animate={
-        isInView ? { opacity: 1, y: 0 } : { opacity: 1, y: animateDistance }
-      }
-      whileHover={{
-        scale: 1.01,
-      }}
-      onTap={handleClick}
-      whileTap={{ scale: 1, translateY: 5 }}
-    >
-      <Link href={`/work/${slug}`} key={slug}>
+    <Link href={`/work/${slug}`} key={slug} className="project-card">
+      <motion.div
+        ref={ref}
+        className={merge(
+          "group",
+          "relative flex flex-col bg-slate-800",
+          size == "medium" && "rounded-lg p-10 md:p-12",
+          size == "large" && "rounded-xl p-10 md:p-16",
+          !rounded && "rounded-none",
+          "overflow-hidden",
+          className
+        )}
+        title={title}
+        style={{
+          backgroundColor: color,
+        }}
+        initial={{ opacity: 0, y: animateDistance }}
+        animate={
+          isInView ? { opacity: 1, y: 0 } : { opacity: 1, y: animateDistance }
+        }
+        whileHover={{
+          scale: 1.01,
+        }}
+        onTap={handleClick}
+        whileTap={{ scale: 1, translateY: 5 }}
+      >
         <div
           className={classNames(
             format == "rows" && "flex flex-col gap-4",
@@ -175,8 +174,8 @@ const ProjectCard = ({
             backgroundPosition: "center",
           }}
         />
-      </Link>
-    </motion.div>
+      </motion.div>
+    </Link>
   )
 }
 

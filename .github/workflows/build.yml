@@ -9,9 +9,11 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     strategy:
       matrix:
         node-version: [18.x]
+
     env:
       NEXT_PUBLIC_URL: ${{ secrets.NEXT_PUBLIC_URL }}
       NEXT_PUBLIC_SANITY_PROJECT_ID: ${{ secrets.NEXT_PUBLIC_SANITY_PROJECT_ID }}
@@ -21,6 +23,7 @@ jobs:
       SANITY_TOKEN: ${{ secrets.SANITY_TOKEN }}
       SANITY_PREVIEW_SECRET: ${{ secrets.SANITY_PREVIEW_SECRET }}
       NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY: ${{ secrets.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY }}
+
     steps:
       - name: Checkout
         uses: actions/checkout@v3

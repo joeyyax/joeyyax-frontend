@@ -1,8 +1,7 @@
 // utilities
-import { merge } from "lib/classNames"
-
 // components
 import ConditionalLink from "./ConditionalLink"
+import { merge } from "lib/classNames"
 
 export type AlertSizeType = "small" | "medium" | "large" | undefined
 export type AlertThemeType =
