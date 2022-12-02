@@ -48,6 +48,7 @@ const Page = async () => {
                 {data.resume && (
                   <p className="pt-8">
                     <Button
+                      className="download-resume"
                       theme="primary"
                       href={data.resume}
                       icon={{
