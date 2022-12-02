@@ -38,7 +38,8 @@ jobs:
 
       - name: Build
         run: npm run build
-        env: NEXT_PUBLIC_URL=${{ secrets.NEXT_PUBLIC_URL }}
+        env: |
+          NEXT_PUBLIC_URL=${{ secrets.NEXT_PUBLIC_URL }}
           NEXT_PUBLIC_SANITY_PROJECT_ID=${{ secrets.NEXT_PUBLIC_SANITY_PROJECT_ID }}
           NEXT_PUBLIC_SANITY_DATASET=${{ secrets.NEXT_PUBLIC_SANITY_DATASET }}
           NEXT_PUBLIC_SANITY_CDN=${{ secrets.NEXT_PUBLIC_SANITY_CDN }}
@@ -49,7 +50,8 @@ jobs:
 
       - name: Run E2E Tests
         run: npm run e2e.headless
-        env: NEXT_PUBLIC_URL=${{ secrets.NEXT_PUBLIC_URL }}
+        env: |
+          NEXT_PUBLIC_URL=${{ secrets.NEXT_PUBLIC_URL }}
           NEXT_PUBLIC_SANITY_PROJECT_ID=${{ secrets.NEXT_PUBLIC_SANITY_PROJECT_ID }}
           NEXT_PUBLIC_SANITY_DATASET=${{ secrets.NEXT_PUBLIC_SANITY_DATASET }}
           NEXT_PUBLIC_SANITY_CDN=${{ secrets.NEXT_PUBLIC_SANITY_CDN }}
