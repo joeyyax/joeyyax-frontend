@@ -1,4 +1,4 @@
-name: Build and test app
+name: Build App
 
 on:
   push:
@@ -51,6 +51,3 @@ jobs:
 
       - name: Build
         run: npm run build
-
-      - name: Run E2E Tests
-        run: npm run e2e.headless

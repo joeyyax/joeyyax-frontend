@@ -19,12 +19,13 @@ describe("Contact Page", () => {
   })
 
   it("Form should not submit without required fields", () => {
+    cy.visit("/contact")
     cy.get("form").submit()
-
     cy.get(".thank-you").should("not.exist")
   })
 
   it("Form is working", () => {
+    cy.visit("/contact")
     cy.get("form input[name='name']").type("E2E Test")
     cy.get("form input[name='email']").type("joey+cypress@joeyyax.com")
     cy.get("form input[name='phone']").type("503 000 0000")
